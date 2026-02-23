@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой прогресс</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html" class="back-link">← Назад к выбору</a>
+    </header>
+    <div id="student-profile" class="profile"></div>
+  </div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const studentId = parseInt(urlParams.get('id'));
+    renderStudentProfile(studentId);
+  </script>
+</body>
+</html>

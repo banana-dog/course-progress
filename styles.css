@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #a0a0a0;
+}
+
+.back-link {
+  color: #6c5ce7;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.back-link:hover {
+  color: #a29bfe;
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, background 0.3s;
+  border: 2px solid transparent;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #6c5ce7;
+}
+
+.avatar-large {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.student-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.level-badge {
+  background: #6c5ce7;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.xp-bar {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.xp-fill {
+  background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+  height: 100%;
+  transition: width 0.5s;
+}
+
+.xp-text {
+  color: #a29bfe;
+  font-weight: bold;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.avatar-huge {
+  font-size: 6rem;
+  margin-bottom: 15px;
+}
+
+.profile-header h1 {
+  margin-bottom: 10px;
+}
+
+.level-title {
+  background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+  padding: 10px 25px;
+  border-radius: 25px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.xp-section {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.xp-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.xp-current {
+  color: #a29bfe;
+  font-weight: bold;
+}
+
+.xp-needed {
+  color: #a0a0a0;
+}
+
+.xp-max {
+  color: #00b894;
+  font-weight: bold;
+}
+
+.progress-bar {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  height: 25px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+  height: 100%;
+  transition: width 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.badges-section {
+  margin-bottom: 30px;
+}
+
+.badges-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.badge:hover {
+  transform: scale(1.05);
+}
+
+.badge.locked {
+  opacity: 0.4;
+  filter: grayscale(1);
+}
+
+.badge.earned {
+  background: rgba(108, 92, 231, 0.3);
+  border: 2px solid #6c5ce7;
+}
+
+.badge-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.badge-name {
+  font-size: 0.85rem;
+  color: #ccc;
+}

@@ -1,0 +1,20 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Алексей",
+      "avatar": "🦊",
+      "xp": 150,
+      "completedLessons": [1, 2, 3],
+      "specialBadges": ["🔧"]
+    },
+    {
+      "id": 2,
+      "name": "Мария",
+      "avatar": "🌟",
+      "xp": 320,
+      "completedLessons": [1, 2, 3, 4, 5],
+      "specialBadges": ["🔧", "💡"]
+    }
+  ]
+}
